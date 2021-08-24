@@ -1,0 +1,75 @@
+{
+    "project_logo": "trident.svg",
+    "project_favicon": "favicon.png",
+    "project_name": "",
+    "project_url": null,
+    "copyright_start_year": null,
+    "client_name": null,
+    "client_url": null,
+    "creators": [
+        {
+            "name": null,
+            "url": null
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#00585C",
+        "background_color": "#fefdfb",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#fefefe",
+        "show_project_name": true,
+        "show_version": false,
+        "max_width": null,
+        "titles": {
+            "library_title": "Naval Design System",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
+    },
+    "assets": {
+        "css": [],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "buttons",
+            "title": "Buttons",
+            "components": [
+                {
+                    "group": "buttons",
+                    "name": "default",
+                    "title": "Buttons",
+                    "width": "full",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }, {
+                    "group": "buttons",
+                    "name": "default",
+                    "title": "Buttons 2",
+                    "width": "half"
+                }
+            ]
+        }
+    ],
+    "version": "1.9.5"
+}
