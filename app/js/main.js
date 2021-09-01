@@ -453,7 +453,7 @@ new Vue({
             if(page) {
                 _this.loadPage(page);
             }
-        }, 0);
+        }, 500);
     },
 
     methods: {
@@ -499,7 +499,7 @@ new Vue({
          */
         isLoadingPage: function() {
             var _this = this,
-                hash = location.hash;
+                hash = location.hash;           
 
             if(_this.content.pages !== undefined && _this.content.pages.length) {
 

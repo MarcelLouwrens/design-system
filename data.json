@@ -3,12 +3,12 @@
     "project_favicon": "favicon.png",
     "project_name": "",
     "project_url": null,
-    "copyright_start_year": null,
+    "copyright_start_year": "2021",
     "client_name": null,
     "client_url": null,
     "creators": [
         {
-            "name": null,
+            "name": "Rapid Mobile",
             "url": null
         }
     ],
@@ -17,15 +17,15 @@
         "highlight_color": "#F9FAFC",
         "brand_color": "#00585C",
         "background_color": "#fefdfb",
-        "code_highlight_theme": "github",
-        "override_code_highlight_bg": "#F9FAFC",
+        "code_highlight_theme": "nord",
+        "override_code_highlight_bg": "#121212",
         "sample_dark_background": "#fefefe",
         "show_project_name": true,
         "show_version": false,
         "max_width": null,
         "titles": {
             "library_title": "Naval Design System",
-            "pages_title": "Overview",
+            "pages_title": "Overview and Guides",
             "components_title": "Components"
         }
     },
@@ -46,27 +46,559 @@
                 "name": "introduction",
                 "title": "Introduction",
                 "file": "./pages/intro.md"
+            },
+            {
+                "name": "typography",
+                "title": "Typography",
+                "file": "./pages/typography.md"
+            },
+            {
+                "name": "layout",
+                "title": "Layout and Grid",
+                "file": "./pages/layout.md"
+            },
+            {
+                "name": "logos",
+                "title": "Logos",
+                "file": "./pages/logos.md"
+            },
+            {
+                "name": "icons",
+                "title": "Icons",
+                "file": "./pages/icons.md"
+            },
+            {
+                "name": "cases",
+                "title": "Special Cases",
+                "file": "./pages/cases.md"
+            },
+            {
+                "name": "admin",
+                "title": "Admin Screens",
+                "file": "./pages/admin.md"
+            },
+            {
+                "name": "hierarchy",
+                "title": "Visual Hierarchy",
+                "file": "./pages/hierarchy.md"
             }
         ]
     },
     "groups": [
+        {
+            "name": "branding",
+            "title": "Colours",
+            "components": [
+                {
+                    "group": "branding",
+                    "name": "color-palette",
+                    "title": "Colour Palette",
+                    "type": "colors",
+                    "colors": [
+                        "#7da9f9,#507ed3",
+                        "#f469a7,#c14c80",
+                        "#60ceb8,#3fa18d",
+                        "#f5d13f,#f5a63f",
+                        "#e199e5,#c776cb"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "containers",
+            "title": "Containers",
+            "components": [
+                {
+                    "group": "containers",
+                    "name": "light",
+                    "title": "Light Containers",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "containers",
+                    "name": "dark",
+                    "title": "Dark Containers",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
         {
             "name": "buttons",
             "title": "Buttons",
             "components": [
                 {
                     "group": "buttons",
-                    "name": "default",
-                    "title": "Buttons",
-                    "width": "full",
+                    "name": "light",
+                    "title": "Primary Buttons",
                     "options": {
                         "sample_dark_background": true
                     }
-                }, {
+                },
+                {
                     "group": "buttons",
+                    "name": "dark",
+                    "title": "Secondary Buttons",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "buttons",
+                    "name": "graphic",
+                    "title": "Graphic Buttons",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "footer",
+            "title": "Footers",
+            "components": [
+                {
+                    "group": "footer",
+                    "name": "light",
+                    "title": "Light Footer",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "footer",
+                    "name": "dark",
+                    "title": "Dark Footer",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "indicators",
+            "title": "Indicators",
+            "components": [
+                {
+                    "group": "indicators",
                     "name": "default",
-                    "title": "Buttons 2",
-                    "width": "half"
+                    "title": "Indicators",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "tooltips",
+            "title": "Tooltips",
+            "components": [
+                {
+                    "group": "tooltips",
+                    "name": "light",
+                    "title": "Light Tooltips",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "tooltips",
+                    "name": "dark",
+                    "title": "Dark Tooltips",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "loaders",
+            "title": "Loaders",
+            "components": [
+                {
+                    "group": "loaders",
+                    "name": "light",
+                    "title": "Light Loaders",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "loaders",
+                    "name": "dark",
+                    "title": "Dark Loaders",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "labels",
+            "title": "Labels",
+            "components": [
+                {
+                    "group": "labels",
+                    "name": "default",
+                    "title": "Labels",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "tables",
+            "title": "Tables",
+            "components": [
+                {
+                    "group": "tables",
+                    "name": "light",
+                    "title": "Light Tables",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "tables",
+                    "name": "dark",
+                    "title": "Dark Tables",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "lists",
+            "title": "Lists",
+            "components": [
+                {
+                    "group": "lists",
+                    "name": "light",
+                    "title": "Light Lists",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "lists",
+                    "name": "dark",
+                    "title": "Dark Lists",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "alerts",
+            "title": "Alerts & Toasts",
+            "components": [
+                {
+                    "group": "alerts",
+                    "name": "light",
+                    "title": "Light Alerts",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "alerts",
+                    "name": "dark",
+                    "title": "Dark Alerts",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "cards",
+            "title": "Cards",
+            "components": [
+                {
+                    "group": "cards",
+                    "name": "light",
+                    "title": "Light Cards",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "cards",
+                    "name": "dark",
+                    "title": "Dark Cards",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "scrollbars",
+            "title": "Scrollbars",
+            "components": [
+                {
+                    "group": "scrollbars",
+                    "name": "light",
+                    "title": "Light Scrollbars",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "scrollbars",
+                    "name": "dark",
+                    "title": "Dark Scrollbars",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "graphs",
+            "title": "Graphs",
+            "components": [
+                {
+                    "group": "graphs",
+                    "name": "light",
+                    "title": "Light Graphs",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "graphs",
+                    "name": "dark",
+                    "title": "Dark Graphs",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "overlays",
+            "title": "Overlays",
+            "components": [
+                {
+                    "group": "overlays",
+                    "name": "light",
+                    "title": "Light Overlays",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "overlays",
+                    "name": "dark",
+                    "title": "Dark Overlays",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "progress",
+            "title": "Progress Bars",
+            "components": [
+                {
+                    "group": "progress",
+                    "name": "light",
+                    "title": "Light Progress Bars",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "progress",
+                    "name": "dark",
+                    "title": "Dark Progress Bars",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "fields",
+            "title": "Text Input Fields",
+            "components": [
+                {
+                    "group": "fields",
+                    "name": "light",
+                    "title": "Light Input Fields",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "fields",
+                    "name": "dark",
+                    "title": "Dark Input Fields",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "checkboxes",
+            "title": "Checkboxes",
+            "components": [
+                {
+                    "group": "checkboxes",
+                    "name": "light",
+                    "title": "Light Checkboxes",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "checkboxes",
+                    "name": "dark",
+                    "title": "Dark Checkboxes",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "radio",
+            "title": "Radio Buttons",
+            "components": [
+                {
+                    "group": "radio",
+                    "name": "light",
+                    "title": "Light Radio Buttons",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "radio",
+                    "name": "dark",
+                    "title": "Dark Radio Buttons",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "radio",
+                    "name": "group",
+                    "title": "Radio Group Box",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "dropdowns",
+            "title": "Dropdowns",
+            "components": [
+                {
+                    "group": "dropdowns",
+                    "name": "light",
+                    "title": "Light Dropdowns"
+                },
+                {
+                    "group": "dropdowns",
+                    "name": "dark",
+                    "title": "Dark Dropdowns",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "tabs",
+            "title": "Tabs",
+            "components": [
+                {
+                    "group": "tabs",
+                    "name": "light",
+                    "title": "Light Tabs",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "tabs",
+                    "name": "dark",
+                    "title": "Dark Tabs",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "menus",
+            "title": "Menus",
+            "components": [
+                {
+                    "group": "menus",
+                    "name": "main-light",
+                    "title": "MLight Main Menuain Menu",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "menus",
+                    "name": "main-dark",
+                    "title": "Dark Main Menu",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "menus",
+                    "name": "sub-light",
+                    "title": "Light Sub Menu",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "menus",
+                    "name": "sub-dark",
+                    "title": "Dark Sub Menu",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "header",
+            "title": "Header",
+            "components": [
+                {
+                    "group": "header",
+                    "name": "light",
+                    "title": "Header Light",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "header",
+                    "name": "dark",
+                    "title": "Header Dark",
+                    "options": {
+                        "sample_dark_background": true
+                    }
                 }
             ]
         }
