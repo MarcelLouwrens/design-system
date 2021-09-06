@@ -67,7 +67,7 @@
             <div class="ndpl-cube3 ndpl-cube"></div>
         </div>
 
-        <h3 class="ndpl-loading__title" v-if="! loaded && !log.error.length && !log.info.length">Building pattern library...</h3>
+        <h3 class="ndpl-loading__title" v-if="! loaded && !log.error.length && !log.info.length">Building Naval UI Design System...</h3>
         <h3 class="ndpl-loading__title" v-if="log.error.length">Hold up! We have some errors...</h3>
         <h3 class="ndpl-loading__title" v-if="log.info.length && !log.error.length">Looks like you have some setup to do...</h3>
 
@@ -272,7 +272,7 @@
                                                    v-text="component.code_show ? 'Hide code sample' : 'Show code sample'"></a>
                                             </template>
                                             <ul v-else class="ndpl-component__sample-missing ndpl-info">
-                                                <li class="ndpl-info__item">Add your component markup to <code>/components/{{ component.group }}/{{ component.name }}/markup.html</code></li>
+                                                <li class="ndpl-info__item">Component to be added <code>/components/{{ component.group }}/{{ component.name }}/markup.html</code></li>
                                             </ul>
 
                                         </div>

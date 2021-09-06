@@ -1,0 +1,1 @@
+<img src="images/toggle-light.jpg" />

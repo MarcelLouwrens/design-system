@@ -22,7 +22,7 @@
         "sample_dark_background": "#fefefe",
         "show_project_name": true,
         "show_version": false,
-        "max_width": null,
+        "max_width": "1024",
         "titles": {
             "library_title": "Naval Design System",
             "pages_title": "Overview and Guides",
@@ -92,14 +92,37 @@
                 {
                     "group": "branding",
                     "name": "color-palette",
-                    "title": "Colour Palette",
+                    "title": "Primary Palette",
                     "type": "colors",
                     "colors": [
-                        "#7da9f9,#507ed3",
-                        "#f469a7,#c14c80",
-                        "#60ceb8,#3fa18d",
-                        "#f5d13f,#f5a63f",
-                        "#e199e5,#c776cb"
+                        "#373737,#EBEBEB",
+                        "#35558A,#00AEEF",
+                        "#ffffff,#FAFAFB",
+                        "#000000,#1F3364"
+                    ]
+                },
+                {
+                    "group": "branding",
+                    "name": "color-palette",
+                    "title": "Dark Mode Palette",
+                    "type": "colors",
+                    "colors": [
+                        "#3F444A,#373737",
+                        "#DBDBDC,#696969",
+                        "#ffffff,#3D3D3D",
+                        "#000000"
+                    ]
+                },
+                {
+                    "group": "branding",
+                    "name": "color-palette",
+                    "title": "Indicators Palette",
+                    "type": "colors",
+                    "colors": [
+                        "#FFD978",
+                        "#EB4747",
+                        "#0BC198",
+                        "#FFA8A8"
                     ]
                 }
             ]
@@ -157,6 +180,122 @@
             ]
         },
         {
+            "name": "fields",
+            "title": "Text Input Fields",
+            "components": [
+                {
+                    "group": "fields",
+                    "name": "light",
+                    "title": "Light Input Fields",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "fields",
+                    "name": "dark",
+                    "title": "Dark Input Fields",
+                    "options": {
+                        "sample_dark_background": true,
+                        "sample_background_color": "#3F444A"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "checkboxes",
+            "title": "Checkboxes",
+            "components": [
+                {
+                    "group": "checkboxes",
+                    "name": "light",
+                    "title": "Light Checkboxes",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "checkboxes",
+                    "name": "dark",
+                    "title": "Dark Checkboxes",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "radio",
+            "title": "Radio Buttons",
+            "components": [
+                {
+                    "group": "radio",
+                    "name": "light",
+                    "title": "Light Radio Buttons",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "radio",
+                    "name": "dark",
+                    "title": "Dark Radio Buttons",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "radio",
+                    "name": "group",
+                    "title": "Radio Group Box",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "dropdowns",
+            "title": "Dropdowns",
+            "components": [
+                {
+                    "group": "dropdowns",
+                    "name": "light",
+                    "title": "Light Dropdowns"
+                },
+                {
+                    "group": "dropdowns",
+                    "name": "dark",
+                    "title": "Dark Dropdowns",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "tabs",
+            "title": "Tabs",
+            "components": [
+                {
+                    "group": "tabs",
+                    "name": "light",
+                    "title": "Light Tabs",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "tabs",
+                    "name": "dark",
+                    "title": "Dark Tabs",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
             "name": "footer",
             "title": "Footers",
             "components": [
@@ -172,6 +311,28 @@
                     "group": "footer",
                     "name": "dark",
                     "title": "Dark Footer",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "toggle",
+            "title": "Toggle Buttons",
+            "components": [
+                {
+                    "group": "toggle",
+                    "name": "light",
+                    "title": "Light Toggle",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "toggle",
+                    "name": "dark",
+                    "title": "Dark Toggle",
                     "options": {
                         "sample_dark_background": true
                     }
@@ -427,128 +588,13 @@
             ]
         },
         {
-            "name": "fields",
-            "title": "Text Input Fields",
-            "components": [
-                {
-                    "group": "fields",
-                    "name": "light",
-                    "title": "Light Input Fields",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                },
-                {
-                    "group": "fields",
-                    "name": "dark",
-                    "title": "Dark Input Fields",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "checkboxes",
-            "title": "Checkboxes",
-            "components": [
-                {
-                    "group": "checkboxes",
-                    "name": "light",
-                    "title": "Light Checkboxes",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                },
-                {
-                    "group": "checkboxes",
-                    "name": "dark",
-                    "title": "Dark Checkboxes",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "radio",
-            "title": "Radio Buttons",
-            "components": [
-                {
-                    "group": "radio",
-                    "name": "light",
-                    "title": "Light Radio Buttons",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                },
-                {
-                    "group": "radio",
-                    "name": "dark",
-                    "title": "Dark Radio Buttons",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                },
-                {
-                    "group": "radio",
-                    "name": "group",
-                    "title": "Radio Group Box",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "dropdowns",
-            "title": "Dropdowns",
-            "components": [
-                {
-                    "group": "dropdowns",
-                    "name": "light",
-                    "title": "Light Dropdowns"
-                },
-                {
-                    "group": "dropdowns",
-                    "name": "dark",
-                    "title": "Dark Dropdowns",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "tabs",
-            "title": "Tabs",
-            "components": [
-                {
-                    "group": "tabs",
-                    "name": "light",
-                    "title": "Light Tabs",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                },
-                {
-                    "group": "tabs",
-                    "name": "dark",
-                    "title": "Dark Tabs",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                }
-            ]
-        },
-        {
             "name": "menus",
             "title": "Menus",
             "components": [
                 {
                     "group": "menus",
                     "name": "main-light",
-                    "title": "MLight Main Menuain Menu",
+                    "title": "Light Main Menu",
                     "options": {
                         "sample_dark_background": true
                     }
@@ -564,7 +610,7 @@
                 {
                     "group": "menus",
                     "name": "sub-light",
-                    "title": "Light Sub Menu",
+                    "title": "Light Side Menu",
                     "options": {
                         "sample_dark_background": true
                     }
@@ -572,7 +618,7 @@
                 {
                     "group": "menus",
                     "name": "sub-dark",
-                    "title": "Dark Sub Menu",
+                    "title": "Dark Side Menu",
                     "options": {
                         "sample_dark_background": true
                     }
@@ -587,7 +633,6 @@
                     "group": "header",
                     "name": "light",
                     "title": "Header Light",
-                    "width": "half",
                     "options": {
                         "sample_dark_background": true
                     }

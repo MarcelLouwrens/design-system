@@ -1,0 +1,1 @@
+<p>The colour palettes below are intended to be used as a quick reference. Please refer to individual UI components, such as containers, indicators etc, for detailed usage. 

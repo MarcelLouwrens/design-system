@@ -1,0 +1,38 @@
+<style>
+
+input.dark {
+	min-width: 360px;
+	width:  100%;
+	padding:  12px;
+	color:  #ffffff;
+	border-radius: 2px;
+	border: 1px solid #696969;
+	background: none;
+}
+
+input:hover {
+	border: 1px solid #00AEEF;
+}
+
+.dark-error:focus, .dark:focus {
+	border: 1px solid #00AEEF;
+	box-shadow: 1px 1px 1px 1px rgba(0, 174, 239, 0.25);
+	outline: none;
+}
+
+input.dark-error {
+	border: 2px solid #FFA8A8;
+	box-shadow: 0 0 2px 2px rgba(255, 168, 168, 0.1);
+}
+
+</style>
+
+<div style="background: #3F444A;">
+	<p>
+		<input class="dark" type="text" placeholder="Hover over me" />
+	</p>
+
+	<p>
+		<input class="dark dark-error" type="text" placeholder="Whoops an error"/>
+	</p>
+</div>

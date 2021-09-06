@@ -1,0 +1,1 @@
+<img src="images/tabs-light.jpg" style="width:auto"/>
